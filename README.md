@@ -17,6 +17,16 @@ npm i -g @nestjs/cli
 ```
 docker-compose up -d
 ```
+5. Clone the file __.env.template__ to __.env__
+6. Fill the __.env__ file with your credentials
+7. Execute the following command:
+```
+yarn start:dev
+```
+6. Restart the database
+```
+http://localhost:3000/api/v2/seed
+```
 
 ## Stack overview
 * MongoDB
