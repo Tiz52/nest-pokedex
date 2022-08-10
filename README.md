@@ -34,6 +34,14 @@ http://localhost:3000/api/v2/seed
 * TypeScript
 * Docker
 
+# Production Build
+1. Create the file ```.env.prod```
+2. Fill the values with your credentials for the production environment
+3. Create a new image with the command:
+```
+docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
+```
+
 # Notes
 Heroku redeploy without changes
 ```
